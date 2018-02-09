@@ -1,0 +1,18 @@
+{
+    "name": "adapt-AATJSON",
+    "repository": "git://github.com/cgkineo/adapt-AATJSON",
+    "framework": ">=2",
+    "version": "0.0.5",
+    "homepage": "https://github.com/cgkineo/adapt-AATJSON",
+    "issues": "https://github.com/cgkineo/adapt-AATJSON/issues/",
+    "displayName": "AATJSON",
+    "extension": "AATJSON",
+    "description": "Adapt Framework pre-filter for correcting Adapt Authoring Tool JSON",
+    "main": "/js/adapt-aatjson.js",
+    "targetAttribute": "_AATJSON",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension"
+    ],
+    "license": "GPLv3"
+}
