@@ -2,7 +2,7 @@
     "name": "adapt-AATJSON",
     "repository": "git://github.com/cgkineo/adapt-AATJSON",
     "framework": ">=2",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "homepage": "https://github.com/cgkineo/adapt-AATJSON",
     "issues": "https://github.com/cgkineo/adapt-AATJSON/issues/",
     "displayName": "AATJSON",

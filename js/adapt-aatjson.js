@@ -1,6 +1,7 @@
 define([
-  'core/js/adapt'
-], function(Adapt) {
+  'core/js/adapt',
+  './jquery.a11y.js'
+], function(Adapt, jqueryA11y) {
 
   function walk(endPoint, filter) {
     for (var k in endPoint) {
@@ -93,14 +94,14 @@ define([
 
   function preprocess(data, type) {
     if (type !== "json") return data;
-    
+
     var json = JSON.parse(data);
 
     walk(json, function(value) {
       value = value.replace(/^\s*/, "").replace(/\s*$/, ""); /// trim whitespace
       value = value.replace(/\n/g, ""); // remove returns
       // check for the number of p tags and remove singular wrappers
-      var openP = value.match(/\<p\>/g); 
+      var openP = value.match(/\<p\>/g);
       if (openP && openP.length === 1 && value.slice(0,3) === "<p>" && value.slice(-4) === "</p>") {
         value = value.slice(3,-4);
       }
